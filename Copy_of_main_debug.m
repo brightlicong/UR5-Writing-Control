@@ -13,7 +13,7 @@ coVala = [rand rand rand];
 coValb = [rand rand rand];
 %% 导入总体信息
 %所有数据都是先x轴再z轴
-head_file_name = "dots_information\0.txt";
+head_file_name = "dots-information\你好骚啊\0.txt";
 head_file = importdata (head_file_name);
 x_length = head_file(1);
 z_length = head_file(2);
@@ -22,7 +22,7 @@ head_tail_inf = zeros(img_num,5);
 %% 导入笔画信息
 if strokes_sorting_mode == 1
     for i= 1:img_num
-        file_name = ['dots_information\',num2str(i),'.txt'];
+        file_name = ['dots-information\你好骚啊\',num2str(i),'.txt'];
         file = importdata (file_name);
         head_tail_inf(i,1) = i;
         head_tail_inf(i,2:3) = file(1,:);
@@ -39,7 +39,7 @@ if strokes_sorting_mode == 1
         if head_dis < tail_dis
             head_delet_index = find(head_tail_inf(:,1)==head_index);
             this_point = head_tail_inf(head_delet_index,[2 3]);
-            file_name = ['dots_information\',num2str(head_index),'.txt'];
+            file_name = ['dots-information\你好骚啊\',num2str(head_index),'.txt'];
             file = importdata (file_name);
             dots_list{i,1}= file;        
             head_tail_inf(head_delet_index,:)=[];
@@ -47,7 +47,7 @@ if strokes_sorting_mode == 1
         else
             tail_delet_index = find(head_tail_inf(:,1)==tail_index);
             this_point = head_tail_inf(tail_delet_index,[4 5]);
-            file_name = ['dots_information\',num2str(tail_index),'.txt'];
+            file_name = ['dots-information\你好骚啊\',num2str(tail_index),'.txt'];
             file = importdata (file_name);
             dots_list{i,1}= flipud(file);%上下翻转矩阵
             head_tail_inf(tail_delet_index,:)=[];
@@ -99,7 +99,7 @@ for i= 1:img_num
                 end
             end
         end        
-        a = ur5_ikine_v2(r2,trajectory);
+        a = ur5_ikine(r2,trajectory);
         char_list = [char_list;a];
     end
     %抬笔落笔
@@ -120,7 +120,7 @@ for i= 1:img_num
         for j = 1:3
             steps = get_steps_by_dis(T{j,1}(1,4),T{j,1}(3,4),T{j,2}(1,4),T{j,2}(3,4));
             trajectory =ctraj(T{j,1},T{j,2},steps);
-            a = ur5_ikine_v2(r2,trajectory);
+            a = ur5_ikine(r2,trajectory);
             lift_list = [lift_list;a];
         end
     end

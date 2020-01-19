@@ -22,7 +22,7 @@ qtraj = zeros(Tq_quantity,6);
 
 for i = 1:Tq_quantity
     
-    disp(i);
+    %disp(i);
     %     disp(qtraj);
     available_q = ur5_ikine_single( ur5 , ctraj(:,:,i) );
     
