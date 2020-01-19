@@ -11,7 +11,7 @@ img_num = head_file(3);%关键点数
 pen_length = 0.1; %笔的长度
 lift_dis = 0.05; %抬笔的距离
 original_display_mode = 1; %是否显示理想预览图
-path_disply_mode = 0;%是否显示实际刀路
+path_disply_mode = 1;%是否显示实际刀路
 coVal = [rand rand rand];
 
 %% 必要对象的声明 
@@ -133,5 +133,5 @@ end
 %% 关节角转化为txt文件
 writeQlist(Qlist);
 %% 结果测试
-test_plot(Qlist,r2,r1);
+%test_plot(Qlist,r2,r1);
 toc

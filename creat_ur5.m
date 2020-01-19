@@ -12,11 +12,11 @@ L(6) = Link([0     0.0823  0       0],'standard') ;
 ur5 = SerialLink(L,'name','UR5');
 
 if nargin == 0
-    %ur5.name = 'UR5';
-    %ur5.base = transl(0,0,0);
+    ur5.name = 'UR5';
+    ur5.base = transl(0,0,0);
 elseif nargin == 1
     ur5.name = rn;
-    %ur5.base = transl(0,0,0);
+    ur5.base = transl(0,0,0);
 elseif nargin == 2
     ur5.name = rn;
     ur5.base = bp;
