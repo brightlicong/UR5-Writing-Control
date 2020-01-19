@@ -10,7 +10,7 @@ img_num = head_file(3);%关键点数
 %% 相关信息设置
 pen_length = 0.1; %笔的长度
 lift_dis = 0.05; %抬笔的距离
-original_display_mode = 1; %是否显示理想预览图
+original_display_mode = 0; %是否显示理想预览图
 path_disply_mode = 1;%是否显示实际刀路
 coVal = [rand rand rand];
 

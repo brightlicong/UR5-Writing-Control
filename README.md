@@ -1,3 +1,11 @@
+# 截图
+
+![img1](E:\MyGit\UR5-Writing-Control\img\img1.png)
+
+![img2](E:\MyGit\UR5-Writing-Control\img\img2.png)
+
+![img3](E:\MyGit\UR5-Writing-Control\img\img3.jpg)
+
 # 使用方法
 
 1. 将含有笔画信息的文件放在`dots-information`文件夹中，其满足以下要求：
