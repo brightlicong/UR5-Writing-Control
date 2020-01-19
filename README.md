@@ -1,10 +1,10 @@
 # 截图
 
-![img1](E:\MyGit\UR5-Writing-Control\img\img1.png)
+![img1](https://github.com/brightlicong/UR5-Writing-Control/blob/master/img/img1.png)
 
-![img2](E:\MyGit\UR5-Writing-Control\img\img2.png)
+![img2](https://github.com/brightlicong/UR5-Writing-Control/blob/master/img/img2.png)
 
-![img3](E:\MyGit\UR5-Writing-Control\img\img3.jpg)
+![img3](https://github.com/brightlicong/UR5-Writing-Control/blob/master/img/img3.png)
 
 # 使用方法
 
